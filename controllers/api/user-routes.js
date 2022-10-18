@@ -26,11 +26,11 @@ router.post('/', (req, res) => {
   router.post('/login', (req, res) => {
     User.findOne({
       where: {
-        email: req.body.email
+        username: req.body.username
       }
     }).then(dbUserData => {
       if (!dbUserData) {
-        res.status(400).json({ message: 'No user with that email address!' });
+        res.status(400).json({ message: 'No user with that username!' });
         return;
       }
   
@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
   
       req.session.save(() => {
         req.session.user_id = dbUserData.id;
-        req.session.username = dbUserData.username;
+        req.session.username = dbUserData.email;
         req.session.loggedIn = true;
     
         res.json({ user: dbUserData, message: 'You are now logged in!' });

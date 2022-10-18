@@ -1,6 +1,6 @@
 <form class="new-post-form">
   <div class="title">
-    <span><a href="/post/{{id}}" target="_blank">{{title}}</a> Posted By {{User.username}} on {{format_date created_at}}</span>
+    <span><a href="/post/{{id}}" target="_blank">{{title}}</a> Posted By {{user.username}} on {{format_date created_at}}</span>
   </div>
   <div class="post-text">
     <p>{{post_text}}</p>
@@ -20,4 +20,3 @@
 </form>
 
 <script src="/js/post.js"></script>
-<script src="/js/comment.js"></script>
