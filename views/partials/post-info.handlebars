@@ -5,18 +5,18 @@
   <div class="post-text">
     <p>{{post_text}}</p>
   </div>
-  {{#if comments.length}}
+  {{!-- {{#if comments.length}}
   <section>
     <h3>Comments:</h3>
       <ul>
         {{#each comments as |comment|}}
         <li>
-          {{> comments_text comment}}
+          {{> comments comment_text}}
         </li>
         {{/each}}
       </ul>
   </section>
   {{/if}}
-</form>
+</form> --}}
 
 <script src="/js/post.js"></script>
