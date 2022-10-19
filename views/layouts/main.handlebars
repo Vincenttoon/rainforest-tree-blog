@@ -16,26 +16,30 @@
 
     <body>
         <div class="wrapper">
-            <header>
-                <h1>
-                    <a href="/">Toon Tech Blog</a>
-                </h1>
-                <nav>
-                    <a href="/">Homepage</a>
+            <header class="h-c">
+                <nav class="nav-bar">
+                    <a class="a-class" href="/">Homepage</a>
                     {{#if loggedIn}}
-                    <a href="/dashboard">Dashboard</a>
+                    <a class="a-class" href="/dashboard">Dashboard</a>
                     <button id="logout" class="btn-no-style">Logout</button>
                     {{else}}
-                    <a href="/login">Login</a>
-                    <a href="/signup">Sign Up</a>
+                    <a class="a-class" href="/login">Login</a>
+                    <a class="a-class" href="/signup">Sign Up</a>
                     {{/if}}
                 </nav>
+                <div class="header-class">
+                    <h1 class="main-head">
+                        Toon Tech Blog
+                    </h1>
+                </div>
             </header>
             <main>
                 {{{ body }}}
             </main>
+        </div>
+        <div class="footer-div">
             <footer>
-                Toon Tech Blog
+                Thank you for visiting Toon Tech Blog!
             </footer>
         </div>
 
@@ -43,6 +47,5 @@
         <script src="/js/logout.js"></script>
         {{/if}}
     </body>
-
     
 </html>

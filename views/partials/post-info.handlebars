@@ -1,10 +1,13 @@
 <form class="new-post-form">
-  <br class="title">
-    <span><a href="/post/{{id}}" target="_blank">{{title}}</a> Posted By {{user.username}} on {{format_date created_at}}</span>
+  <div class="title">
+    <span class="span-class">
+      <a class="single-title" href="/post/{{id}}" target="_blank">{{title}}</a>
+      <p class="user-post-info">Posted By {{user.username}} on {{format_date created_at}}</p>
+    </span>
   </div>
-  <div class="post-text d-flex">
+  <div class="post-text">
     <span>
-      <p>{{post_text}}</p>
+      <p class="single-post-text">{{post_text}}</p>
     </span>
   </div>
 </form>

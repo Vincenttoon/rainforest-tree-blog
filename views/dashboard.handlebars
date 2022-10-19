@@ -1,18 +1,18 @@
 <section class="row">
     <div class="column">
-        <h2>Create Your New Post:</h2>
+        <h2 class="create-h">Create Your New Post:</h2>
     </div>
 
   <form class="new-post-form">
-    <div>
+    <div class="npf-title">
       <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+      <input class="post-input" type="text" id="post-title" name="post-title" />
     </div>
-    <div>
+    <div class="npf-text">
       <label for="post-text">Text</label>
-      <textarea type="submit" name="post-text"></textarea>
+      <textarea class="post-text" type="submit" name="post-text"></textarea>
     </div>
-    <button type="submit" class="btn">Create</button>
+    <button class="create-btn" type="submit" class="btn">Create</button>
   </form>
 </section>
 
@@ -23,7 +23,7 @@
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a class="edit-post-ref" href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
   </ol>
