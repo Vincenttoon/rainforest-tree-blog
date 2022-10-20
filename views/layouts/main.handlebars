@@ -14,6 +14,7 @@
         />
     </head>
 
+{{!-- handlebar for dynamic homepage --}}
     <body>
         <div class="wrapper">
             <header class="h-c">
@@ -34,6 +35,7 @@
                 </div>
             </header>
             <main>
+                {{!-- where dynamically information is displayed --}}
                 {{{ body }}}
             </main>
         </div>
@@ -43,6 +45,7 @@
             </footer>
         </div>
 
+{{!-- if logged in, allow user to log out --}}
         {{#if loggedIn}}
         <script src="/js/logout.js"></script>
         {{/if}}

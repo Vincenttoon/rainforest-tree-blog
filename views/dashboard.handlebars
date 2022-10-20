@@ -2,7 +2,7 @@
     <div class="column">
         <h2 class="create-h">Create Your New Post:</h2>
     </div>
-
+{{!-- form for creating a new post --}}
   <form class="new-post-form">
     <div class="npf-title">
       <label for="post-title">Title</label>
@@ -16,6 +16,7 @@
   </form>
 </section>
 
+{{!-- displays posts if the user has posted previously --}}
 {{#if posts.length}}
 <section>
   <h2>Your Posts:</h2>
