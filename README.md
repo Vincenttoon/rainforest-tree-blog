@@ -1,12 +1,14 @@
 # Tech Blog
 
+![Picture of Home Page](./assets/images/homepage.jpg)
+
 ## License
 ### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ### [MIT](https://opensource.org/licenses/MIT)
 
 ## Description
 
-An MVC application that allows users to log in, write blog posts, comment with other users and read their posts.
+* An MVC application that allows users to log in, write blog posts, comment with other users and read their posts.
 
 By: [Vincent Toon](https://github.com/Vincenttoon)
 
@@ -14,31 +16,40 @@ By: [Vincent Toon](https://github.com/Vincenttoon)
 
 * [Installation](#installation)
 
+* [Tests](#tests)
+
 * [Usage](#usage)  
 
 * [Contributors](#contributors)
 
-* [Tests](#tests)
+* [Bugs/Improvements](#bugs-and-improvements)
 
 * [Questions?](#questions)
+
+* [Acceptance Criteria](#acceptance-criteria)
 
 ## Installation
 
 * Head to the repository to download or view this code: [Tech Blog](https://github.com/Vincenttoon/rainforest-tree-blog)
 
-download code. npm i
+* Download code. npm i
 
 ## Tests
+[Heroku Live Deployment](https://arcane-lake-94279.herokuapp.com/dashboard/)
 
-n/a
+[Video Demonstration](https://drive.google.com/file/d/1W-IM9lEkvubzaKUBBBGGsHgrxXiWL-aP/view)
 
 ## Usage
 
-For personal use, visit the live link, sign in and enjoy. For developer use, download the code base, npm i, and start contributing to the database!
+* For personal use, visit the live link, sign in and enjoy. For developer use, download the code base, npm i, and start contributing to the database!
 
 ## Contributors
 
 * n/a
+
+## Bugs and Improvements
+
+* More time could have been spent styling and working on responsiveness. Was rushing through 300+ lines of CSS to move on to our second group assignment.
 
 ## Questions?
 
